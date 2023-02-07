@@ -53,7 +53,7 @@ app.post("/forgot-password", async (req, res) => {
       expiresIn: "1h",
     });
 
-    const resetURL = `http://localhost:3000/reset-password/${resetToken}`;
+    const resetURL = `https://musical-biscuit-12f39a.netlify.app/reset-password/${resetToken}`;
 
     const mailOptions = {
       from: "example@gmail.com",
